@@ -9,6 +9,7 @@ initialCommands in console := """
       |import doodle.jvm.Java2DFrame._
       |import doodle.backend.StandardInterpreter._
       |import doodle.examples._
+      |import com.nullhappens.learning._
     """.trim.stripMargin
 
 cleanupCommands in console := """
