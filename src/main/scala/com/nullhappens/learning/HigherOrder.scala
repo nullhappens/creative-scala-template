@@ -41,7 +41,6 @@ object HigherOrder {
     loop(samples);
   }
 
-  
   def concentricShapes(count: Int, singleShape: Int => Image): Image =
     count match {
       case 0 => Image.empty
