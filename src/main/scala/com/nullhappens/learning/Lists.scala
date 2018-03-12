@@ -1,5 +1,8 @@
 package com.nullhappens.learning
 
+import doodle.core.{Angle, Image, PathElement, Point}
+import doodle.syntax._
+
 object Lists {
 
   def sayHi(length: Int): List[String] =
@@ -84,6 +87,14 @@ object Lists {
         case hd :: tl => loop(tl, hd :: acc)
       }
     loop(xs, List())
+  }
+
+  def polygon(sides: Int, size: Int, startAngle: Angle): Image = {
+    def loop(n: Int, rotation: Angle): List[PathElement] =
+      n match {
+        case 0 => Nil
+        case n => PathElement.lineTo()
+      }
   }
 
 }
