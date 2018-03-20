@@ -1,4 +1,4 @@
-package com.nullhappens.learning
+package com.nullhappens.learning.creativescala
 
 object Lists {
 

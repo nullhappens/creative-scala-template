@@ -1,4 +1,4 @@
-package com.nullhappens.learning
+package com.nullhappens.learning.creativescala
 
 import doodle.core.Image
 import doodle.turtle.Instruction

@@ -1,4 +1,5 @@
-package com.nullhappens.learning
+package com.nullhappens.learning.creativescala
+
 import doodle.core._
 
 object Recursion {
