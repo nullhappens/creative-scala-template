@@ -57,3 +57,19 @@ object Equal {
 
 assert(Equal[Person].equal(Person("Noel", "noel@example.com"), Person("Noel", "noel@example.com")))
 
+
+//Pattern:
+
+trait TypeClass[A]{
+  def method(value: A): Any = ???
+}
+
+object TypeClass {
+  def apply[A](implicit instance: TypeClass[A]): TypeClass[A] =
+    instance
+}
+
+//then you can call
+//TypeClass[Person].method(Person("pname", "pemail"))
+
+
